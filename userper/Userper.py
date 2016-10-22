@@ -27,8 +27,7 @@ class Userper():
         if user != None:
             self.username = user['username']
             self.email = user['email']
-            self.last_name = user['last_name']
-            self.first_name = user['first_name']
+            self.name = user['name']
             self.grade = user['grade']
             self.major = user['major']
 
