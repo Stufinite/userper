@@ -20,7 +20,7 @@ class Userper():
         user = {
             'username': 'root',
             'email': 'root@mail.stufinite.faith',
-            'name': 'root'
+            'name': 'root',
             'grade': 1,
             'major': 'CS'
         }
