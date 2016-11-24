@@ -15,6 +15,8 @@ class Userper():
             self.name = user['name']
             self.grade = user['grade']
             self.major = user['major']
+            self.second_major = user['second_major']
+            self.career = user['career']
 
     def get_test(self, session_id=''):
         user = {
@@ -30,6 +32,8 @@ class Userper():
             self.name = user['name']
             self.grade = user['grade']
             self.major = user['major']
+            self.second_major = user['second_major']
+            self.career = user['career']
 
     def _get_user(self, session_id=''):
         r = urllib.request.urlopen(
