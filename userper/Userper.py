@@ -24,9 +24,9 @@ class Userper():
             'email': 'root@mail.stufinite.faith',
             'name': 'root',
             'grade': '2',
-            'major': '資訊科學與工程學系學士班'
+            'major': '資訊科學與工程學系學士班',
             'second_major': '',
-            'career': 'U'
+            'career': 'U',
         }
         if user != None:
             self.username = user['username']
