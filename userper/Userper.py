@@ -1,4 +1,5 @@
 import urllib.request
+from urllib.error import HTTPError
 import json
 
 
@@ -17,6 +18,8 @@ class Userper():
             self.major = user['major']
             self.second_major = user['second_major']
             self.career = user['career']
+        else:
+            raise HTTPError
 
     def get_test(self, session_id=''):
         user = {
