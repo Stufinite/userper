@@ -9,7 +9,7 @@ class Userper():
 
     def get(self, session_id=''):
         user = self._get_user(session_id)
-        if user != None:
+        if user != 'None':
             self.username = user['username']
             self.email = user['email']
             self.name = user['name']
@@ -28,7 +28,7 @@ class Userper():
             'second_major': '',
             'career': 'U',
         }
-        if user != None:
+        if user != 'None':
             self.username = user['username']
             self.email = user['email']
             self.name = user['name']
