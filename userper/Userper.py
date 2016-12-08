@@ -39,13 +39,13 @@ class Userper():
 
     def _get_user(self, session_id=''):
         req = urllib.request.Request('http://' + self.location + '/auth/get_user/' + session_id,
-                                     headers={'User-Agent': "Magic Browser"})
+                                     headers={'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36"})
         r = urllib.request.urlopen(req)
         text = bytes.decode(r.readline())
         return text if text == 'None' else json.loads(text)
 
     def _get_username(self, session_id=''):
         req = urllib.request.Request('http://' + self.location + '/auth/get_username/' + session_id,
-                                     headers={'User-Agent': "Magic Browser"})
+                                     headers={'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36"})
         r = urllib.request.urlopen(req)
         return bytes.decode(r.readline())
