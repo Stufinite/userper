@@ -19,7 +19,7 @@ class Userper():
             self.second_major = user['second_major']
             self.career = user['career']
         else:
-            raise HTTPError
+            raise HTTPError(fp=None)
 
     def get_test(self, session_id=''):
         user = {
